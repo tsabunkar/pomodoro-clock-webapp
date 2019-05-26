@@ -12,15 +12,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.clockService.getClock.subscribe(clockData => {
-      console.log(clockData);
       this.clock = clockData;
     });
   }
 
   onPause() {
-    this.clock.stop(() => {
-      console.log('stop method is triggered');
-    });
+    this.clock.stop(() => {});
   }
 
   onResume() {
@@ -33,9 +30,7 @@ export class AppComponent implements OnInit {
   }
 
   onReset() {
-    this.clock.reset(() => {
-      console.log('onReset method is triggered');
-    });
+    this.clock.reset(() => {});
   }
 
   playAudio() {
