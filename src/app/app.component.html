@@ -31,19 +31,34 @@
     <router-outlet></router-outlet>
   </div>
 
+  <div class="border-container row justify-content-center">
+    <div class="col-1 border-container">
+      <button class="btn btn-primary" (click)="onResume()">Start</button>
+    </div>
+    <div class="col-1 border-container">
+      <button class="btn btn-danger" (click)="onPause()">Pause</button>
+    </div>
+    <div class="col-1 border-container">
+      <button class="btn btn-primary" (click)="onReset()">Reset</button>
+    </div>
+  </div>
 
 </div>
 <br>
-<div class="container">
-  <div class="row justify-content-around">
-    <div class="col-1 ">
+<div class="container border-container">
+  <div class="border-container row justify-content-center">
+    <div class="col-1 border-container">
       <button class="btn btn-primary" (click)="onResume()">Start</button>
     </div>
-    <div class="col-1 ">
+    <div class="col-1 border-container">
       <button class="btn btn-danger" (click)="onPause()">Pause</button>
     </div>
-    <div class="col-1">
+    <div class="col-1 border-container">
       <button class="btn btn-primary" (click)="onReset()">Reset</button>
     </div>
+  </div>
+  <div class="row justify-content-center" style="margin-top: 100px">
+    <label for="link"></label>
+    <a href="">Try Desktop App</a>
   </div>
 </div>
